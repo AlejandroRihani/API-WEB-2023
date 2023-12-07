@@ -6,6 +6,8 @@ import database from "./config/database";
 
 import UserRoutes from "./routes/user.routes"
 
+import ProductRoutes from "./routes/products.routes"
+
 const app = express();
 
 app.use(express.json());
@@ -16,6 +18,7 @@ database.initialize()
 .catch(console.error);
 
 app.use('/my-app',UserRoutes);
+app.use('/my-app',ProductRoutes);
 
 app.listen(3030,()=>{
     console.log("App executed in port 3030 ");
