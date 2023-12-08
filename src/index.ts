@@ -9,6 +9,7 @@ import UserRoutes from "./routes/user.routes"
 import ProductRoutes from "./routes/products.routes"
 
 import PurchaseRoutes from "./routes/purchase.routes"
+import PromotionRoutes from "./routes/promotion.routes"
 
 const app = express();
 
@@ -22,6 +23,7 @@ database.initialize()
 app.use('/my-app',UserRoutes);
 app.use('/my-app',ProductRoutes);
 app.use('/my-app',PurchaseRoutes)
+app.use('/my-app',PromotionRoutes);
 
 app.listen(3030,()=>{
     console.log("App executed in port 3030 ");
