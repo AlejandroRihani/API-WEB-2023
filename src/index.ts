@@ -8,6 +8,8 @@ import UserRoutes from "./routes/user.routes"
 
 import ProductRoutes from "./routes/products.routes"
 
+import PurchaseRoutes from "./routes/purchase.routes"
+
 const app = express();
 
 app.use(express.json());
@@ -19,6 +21,7 @@ database.initialize()
 
 app.use('/my-app',UserRoutes);
 app.use('/my-app',ProductRoutes);
+app.use('/my-app',PurchaseRoutes)
 
 app.listen(3030,()=>{
     console.log("App executed in port 3030 ");

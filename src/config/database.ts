@@ -1,6 +1,7 @@
 import {DataSource} from "typeorm"
 import { User } from "../entities/user";
 import { Products } from "../entities/products";
+import { Purchase } from "../entities/purchase";
 
 export default new DataSource({
     type: "mysql",
@@ -9,7 +10,7 @@ export default new DataSource({
     username:"root",
     password:"",
     database: "webapi",
-    entities: [User, Products],
+    entities: [User, Products,Purchase],
     synchronize: true,
     logging: false,
 });

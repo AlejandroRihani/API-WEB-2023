@@ -1,21 +1,20 @@
-POST http://localhost:3030/my-app/users
+POST http://localhost:3030/my-app/purchase
 Content-Type: application/json
 
 {
-  "nombre": "Ejemplo Usuario",
-  "correo_electronico": "ejemplo@example.com",
-  "contrasena": "miContrasenaSegura",
-  "fecha_de_creacion": "2023-12-05T12:00:00",
-  "usuario_de_creacion": "admin",
-  "fecha_de_actualizacion": "2023-12-05T12:30:00",
-  "usuario_de_actualizacion": "admin",
-  "activo": 1,
-  "numero_de_compras": 5,
-  "campo_adicional": "Valor adicional"
+  "descripcion": "Descripción de la compra",
+  "nombreCliente": "Nombre del Cliente",
+  "precioTotal": 123.45,
+  "totalProductos": 5,
+  "usuarioCreacion": 1,
+  "usuarioActualizacion": "UsuarioActualizado",
+  "activo":"TRUE"
 }
 
+
+
 ###list users
-GET http://localhost:3030/my-app/users
+GET http://localhost:3030/my-app/purchase
 
 
 ###get 1 user
