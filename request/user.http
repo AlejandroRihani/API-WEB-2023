@@ -11,6 +11,17 @@ Content-Type: application/json
   "activo":"TRUE"
 }
 
+### post purchase details
+POST http://localhost:3030/my-app/purchase_details
+Content-Type: application/json
+
+{
+  "producto":"Juguete",
+  "orden":34,
+  "usuario_de_creacion":"alfredo",
+  "fecha de actualización":"HOY"
+}
+
 
 
 ###list users

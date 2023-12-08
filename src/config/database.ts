@@ -3,6 +3,7 @@ import { User } from "../entities/user";
 import { Products } from "../entities/products";
 import { Purchase } from "../entities/purchase";
 import { Promotions } from "../entities/promotion";
+import { Purchase_Details } from "../entities/purchase_details";
 
 export default new DataSource({
     type: "mysql",
@@ -11,7 +12,7 @@ export default new DataSource({
     username:"root",
     password:"",
     database: "webapi",
-    entities: [User, Products,Purchase,Promotions],
+    entities: [User, Products,Purchase,Promotions,Purchase_Details],
     synchronize: true,
     logging: false,
 });

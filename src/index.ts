@@ -9,7 +9,10 @@ import UserRoutes from "./routes/user.routes"
 import ProductRoutes from "./routes/products.routes"
 
 import PurchaseRoutes from "./routes/purchase.routes"
+
 import PromotionRoutes from "./routes/promotion.routes"
+
+import PDRoutes from "./routes/pd.routes"
 
 const app = express();
 
@@ -24,7 +27,7 @@ app.use('/my-app',UserRoutes);
 app.use('/my-app',ProductRoutes);
 app.use('/my-app',PurchaseRoutes)
 app.use('/my-app',PromotionRoutes);
-
+app.use('/my-app',PDRoutes)
 app.listen(3030,()=>{
     console.log("App executed in port 3030 ");
 }); 

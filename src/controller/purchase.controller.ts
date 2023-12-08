@@ -1,6 +1,4 @@
 import {Request, Response, NextFunction} from "express"
-import { DatabaseRepository } from "../declaration";
-import { Purchase } from "../entities/purchase";
 import { PurchaseRepository } from "./purchase.repository";
 
 export class PurchaseController{

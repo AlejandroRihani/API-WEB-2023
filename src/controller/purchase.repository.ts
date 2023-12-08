@@ -2,7 +2,7 @@ import {NotFound} from "http-errors";
 import database from "../config/database";
 import { Id, Query } from "../declaration";
 import { Purchase } from '../entities/purchase';
-//import { } from "";
+import { Purchase_Details } from "../entities/purchase_details";
 
 export class PurchaseRepository implements PurchaseRepository
 {
