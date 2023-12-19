@@ -1,5 +1,7 @@
 import "reflect-metadata";
 
+import cors from "cors";
+
 import express from "express";
 
 import database from "./config/database";
@@ -18,7 +20,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
-
+app.use(cors());
 database.initialize()
 .then(() => console.log("Database Connected yea boi"))
 .catch(console.error);

@@ -7,10 +7,10 @@ import { Purchase_Details } from "../entities/purchase_details";
 
 export default new DataSource({
     type: "mysql",
-    host: "localhost",
+    host: "34.200.105.216",
     port: 3306,
-    username:"root",
-    password:"",
+    username:"usuarioapi",
+    password:"Password_1",
     database: "webapi",
     entities: [User, Products,Purchase,Promotions,Purchase_Details],
     synchronize: true,

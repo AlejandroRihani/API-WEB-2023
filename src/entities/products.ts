@@ -43,5 +43,5 @@ export class Products extends BaseEntity{
   activo!: boolean;
 
   @Column()
-  campo_adicional!: string;
+  imagen!: string;
 }

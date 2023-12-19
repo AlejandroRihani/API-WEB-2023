@@ -6,33 +6,33 @@ export class User extends BaseEntity{
   @PrimaryGeneratedColumn()
   id!: number;
 
-  @Column()
+  @Column({nullable:true})
   nombre!: string;
   
-  @Column()
+  @Column({nullable:true})
   correo_electronico!: string;
 
-  @Column()
+  @Column({nullable:true})
   contrasena!: string;
 
-  @Column()
+  @Column({nullable:true})
   fecha_de_creacion!: string;
 
-  @Column()
+  @Column({nullable:true})
   usuario_de_creacion!: string;
 
-  @Column()
+  @Column({nullable:true})
   fecha_de_actualizacion!: string;
 
-  @Column()
+  @Column({nullable:true})
   usuario_de_actualizacion!: string;
 
-  @Column()
+  @Column({nullable:true})
   activo!: number;
 
-  @Column()
+  @Column({nullable:true})
   numero_de_compras!: number;
 
-  @Column()
+  @Column({nullable:true})
   campo_adicional!: string;
 }
